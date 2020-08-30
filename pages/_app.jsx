@@ -1,4 +1,3 @@
-import '../public/reset.css'
 import '../public/bootstrap.css'
 
 // This default export is required in a new `pages/_app.js` file.
