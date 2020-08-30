@@ -10,11 +10,24 @@ import {listBlogPosts} from "../utilities/Blog";
 import BlogPosts from "../components/BlogPosts";
 
 export default function Index({ intro, work, education, other, projects, blogPosts }) {
+    const right = (
+        <div>
+            <a href="#projects" className="link-dark">
+                Projects
+            </a>
+            &nbsp;
+            |
+            &nbsp;
+            <a href="#blog-posts" className="link-dark">
+                Blog posts
+            </a>
+        </div>
+    );
     return <div>
         <Head>
             <title>Ian Wijma</title>
         </Head>
-        <Header />
+        <Header right={right} />
         <Paper header="Hey you!">
             {intro}
         </Paper>
