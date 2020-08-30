@@ -1,11 +1,16 @@
 import React from "react";
 import Config from "../../content/Config";
 import {getBlogPost, listBlogPosts} from "../../utilities/Blog";
+import Header from "../../components/layouts/Header";
+import Paper from "../../components/containers/Paper";
 
-export default function Index({ config, blog }) {
+export default function Index({ blog }) {
     return (
         <div>
-            <h1>{blog.title}</h1>
+            <Header suffix="blog"/>
+            <Paper header={blog.title} >
+                {blog.content}
+            </Paper>
         </div>
     );
 }

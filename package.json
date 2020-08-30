@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/ianwijma/ian.wij.ma#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "fs-extra": "^9.0.1",
     "gray-matter": "^4.0.2",
     "lodash": "^4.17.20",

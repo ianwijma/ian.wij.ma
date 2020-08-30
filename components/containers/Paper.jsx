@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import slugify from 'slugify'
 
-export default function Paper ({children, header}) {
+export default function Paper ({children, header, right}) {
     const id = slugify(header, {
         lower: true,
         remove: /[^\w\ ]/,
@@ -13,6 +13,9 @@ export default function Paper ({children, header}) {
                     <strong>
                         {header}
                     </strong>
+                    <span className="a4--header-right float-right">
+                        {right}
+                    </span>
                 </h2>
             </div>
             { typeof children === 'string' ? <div className="a4--content" dangerouslySetInnerHTML={{__html:children}} /> : children}

@@ -3,12 +3,21 @@ import Config from "../../content/Config";
 import {listProjects, getProject} from "../../utilities/Project";
 import Header from "../../components/layouts/Header";
 import Paper from "../../components/containers/Paper";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export default function Index({ blog: project }) {
+export default function Project({ project }) {
+    const right = (
+        <div>
+            <a href={project.url} className="link-dark" target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+            </a>
+        </div>
+    );
     return (
         <div>
-            <Header />
-            <Paper header={project.title} >
+            <Header suffix="projects"/>
+            <Paper header={project.title} right={right}>
                 {project.content}
             </Paper>
         </div>
@@ -20,7 +29,7 @@ export async function getStaticProps ( context ) {
     return {
         props: {
             config: Config,
-            blog: await getProject( slug ),
+            project: await getProject( slug ),
         }
     }
 }

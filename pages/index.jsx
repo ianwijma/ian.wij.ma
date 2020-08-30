@@ -6,8 +6,10 @@ import getPageContent from "../utilities/getPageContent";
 import Header from "../components/layouts/Header";
 import Projects from "../components/Projects";
 import {listProjects} from "../utilities/Project";
+import {listBlogPosts} from "../utilities/Blog";
+import BlogPosts from "../components/BlogPosts";
 
-export default function Index({ intro, work, education, other, projects }) {
+export default function Index({ intro, work, education, other, projects, blogPosts }) {
     return <div>
         <Head>
             <title>Ian Wijma</title>
@@ -28,6 +30,9 @@ export default function Index({ intro, work, education, other, projects }) {
         <Paper header="Projects">
             <Projects projects={projects}/>
         </Paper>
+        <Paper header="Blog posts">
+            <BlogPosts blogPosts={blogPosts}/>
+        </Paper>
     </div>
 }
 
@@ -40,6 +45,7 @@ export async function getStaticProps () {
             other: await getPageContent('home/other'),
             education: await getPageContent('home/education'),
             projects: await listProjects(),
+            blogPosts: await listBlogPosts(),
         }
     }
 }

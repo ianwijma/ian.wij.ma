@@ -1,5 +1,6 @@
 ---
 title: An amazing bar post
+summary: This very website!
 slug: bar-post
 ---
 
