@@ -1,9 +1,15 @@
-import Config from '../../content/Config'
-export default function Header({  }) {
+import Link from 'next/link';
+import Config from '../../content/Config';
+
+export default function Header() {
     const {firstName} = Config
     return (
         <header className="mb-5 shadow p-5">
-            <h1>{firstName}'s papers</h1>
+            <h1>
+                <Link href="/">
+                    <span>{firstName}'s papers</span>
+                </Link>
+            </h1>
         </header>
     );
 }

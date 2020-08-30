@@ -4,28 +4,30 @@ import Config from "../content/Config"
 import Paper from "../components/containers/Paper";
 import getPageContent from "../utilities/getPageContent";
 import Header from "../components/layouts/Header";
+import Projects from "../components/Projects";
+import {listProjects} from "../utilities/Project";
 
-export default function Index({ config, intro }) {
+export default function Index({ intro, work, education, other, projects }) {
     return <div>
         <Head>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-            <link rel="stylesheet" href="./reset.css"/>
-            <link rel="stylesheet"
-                  href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-                  integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-                  crossOrigin="anonymous" />
+            <title>Ian Wijma</title>
         </Head>
         <Header />
-        <Paper config={config}>
+        <Paper header="Hey you!">
             {intro}
         </Paper>
-        <style jsx>
-{`
-  * {
-    font-family: 'Roboto Mono', monospace;
-  }
-`}
-        </style>
+        <Paper header="Working experience">
+            {work}
+        </Paper>
+        <Paper header="Education">
+            {education}
+        </Paper>
+        <Paper header="Other">
+            {other}
+        </Paper>
+        <Paper header="Projects">
+            <Projects projects={projects}/>
+        </Paper>
     </div>
 }
 
@@ -34,6 +36,10 @@ export async function getStaticProps () {
         props: {
             config: Config,
             intro: await getPageContent('home/intro'),
+            work: await getPageContent('home/work'),
+            other: await getPageContent('home/other'),
+            education: await getPageContent('home/education'),
+            projects: await listProjects(),
         }
     }
 }

@@ -1,27 +1,27 @@
 import Link from 'next/link'
+import slugify from 'slugify'
 
-export default function Paper ({children, config}) {
-    const { firstName, lastName } = config;
+export default function Paper ({children, header}) {
+    const id = slugify(header, {
+        lower: true,
+        remove: /[^\w\ ]/,
+    });
     return (
-        <div className="a4 mb-5 shadow p-5">
+        <div className="a4 mb-5 shadow p-5" id={id}>
             <div className="a4--header">
-                <Link href="/">
-                    <h2>
-                        <strong>
-                            {firstName} {lastName}
-                        </strong>
-                    </h2>
-                </Link>
+                <h2>
+                    <strong>
+                        {header}
+                    </strong>
+                </h2>
             </div>
-            <div className="a4--content" dangerouslySetInnerHTML={{__html:children}}></div>
+            { typeof children === 'string' ? <div className="a4--content" dangerouslySetInnerHTML={{__html:children}} /> : children}
 
             <style jsx>
 {`
    .a4 {
     margin: 0 auto;
-    max-width: 800px;
-    height: 950px;
-    overflow: hidden;
+    max-width: 950px;
    }
    .a4--header { 
     border-bottom: 1px dotted lightgray;
