@@ -1,15 +1,14 @@
-import Link from 'next/link'
 import slugify from 'slugify'
 
 export default function Paper ({children, header, right}) {
     const id = slugify(header, {
         lower: true,
-        remove: /[^\w\ ]/,
+        remove: /[^\w ]/,
     });
     return (
         <div className="a4 mb-5 shadow p-5" id={id}>
             <div className="a4--header">
-                <h2>
+                <h2 className="m-0">
                     <strong>
                         {header}
                     </strong>
@@ -29,7 +28,7 @@ export default function Paper ({children, header, right}) {
    .a4--header { 
     border-bottom: 1px dotted lightgray;
     padding-bottom: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
    }
 `}
             </style>
