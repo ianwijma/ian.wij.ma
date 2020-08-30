@@ -1,5 +1,5 @@
 import React from "react";
-import Config from "../../utilities/Config";
+import Config from "../../content/Config";
 import {getBlogPost, listBlogPosts} from "../../utilities/Blog";
 
 export default function Index({ config, blog }) {

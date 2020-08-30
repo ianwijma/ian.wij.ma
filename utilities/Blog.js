@@ -1,4 +1,4 @@
-import {readdir, readFile} from 'fs-extra';
+import {readdirSync, readFileSync} from 'fs';
 import matter from 'gray-matter';
 import unified from "unified";
 import remarkHtml from 'remark-html';
@@ -11,7 +11,7 @@ export function getBlogDir() {
 
 export async function getBlogFileNames() {
     const path = getBlogDir();
-    return await readdir(path, 'utf-8');
+    return readdirSync(path, 'utf-8');
 }
 
 const blogPosts = [];
@@ -20,7 +20,7 @@ export async function listBlogPosts() {
         const fileNames = await getBlogFileNames();
         for (const fileName of fileNames) {
             const path = `${getBlogDir()}/${fileName}`
-            const rawContent = await readFile(path, 'utf-8');
+            const rawContent = readFileSync(path, 'utf-8');
             const {content, data} = matter(rawContent);
 
             const htmlContent = await unified()
