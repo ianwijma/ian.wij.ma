@@ -9,7 +9,7 @@ export default function Projects({ max = 5, projects }) {
         <div className="row">
             {projects.map(project => {
                 return (
-                    <div className="col-md-6 mb-4">
+                    <div className="col-md-6 mb-4" key={project.slug}>
                         <div className="card">
                             <div className="card-body">
                                 <h3 className="card-title">{project.title}</h3>

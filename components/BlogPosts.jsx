@@ -9,7 +9,7 @@ export default function BlogPosts({ max = 5, blogPosts }) {
         <div className="row">
             {blogPosts.map(blogPost => {
                 return (
-                    <div className="col-md-6 mb-4">
+                    <div className="col-md-6 mb-4" key={blogPost.slug}>
                         <div className="card">
                             <div className="card-body">
                                 <h3 className="card-title">{blogPost.title}</h3>
