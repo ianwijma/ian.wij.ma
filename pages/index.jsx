@@ -27,6 +27,7 @@ export default function Index({ intro, skills, work, education, other, projects,
         <div>
             <Head>
                 <title>Ian Wijma</title>
+                <meta name="description" content="My online space" />
             </Head>
             <Header right={right} />
             <Paper header="Hey you!">
