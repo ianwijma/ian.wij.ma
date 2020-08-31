@@ -9,7 +9,7 @@ import {listProjects} from "../utilities/Project";
 import {listBlogPosts} from "../utilities/Blog";
 import BlogPosts from "../components/BlogPosts";
 
-export default function Index({ intro, work, education, other, projects, blogPosts }) {
+export default function Index({ intro, skills, work, education, other, projects, blogPosts }) {
     const right = (
         <div>
             <a href="#projects" className="link-dark">
@@ -30,6 +30,9 @@ export default function Index({ intro, work, education, other, projects, blogPos
         <Header right={right} />
         <Paper header="Hey you!">
             {intro}
+        </Paper>
+        <Paper header="Skills">
+            {skills}
         </Paper>
         <Paper header="Working experience">
             {work}
@@ -54,6 +57,7 @@ export async function getStaticProps () {
         props: {
             config: Config,
             intro: await getPageContent('home/intro'),
+            skills: await getPageContent('home/skills'),
             work: await getPageContent('home/work'),
             other: await getPageContent('home/other'),
             education: await getPageContent('home/education'),
