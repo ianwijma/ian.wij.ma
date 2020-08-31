@@ -1,4 +1,4 @@
-**Grocery Store 2010-2013**
+**Albert Heijn (Dutch grocery store) 2010-2013**
 
 I started off with a proper job at the local grocery store,
 where I learned allot about teamwork, communication and being organised.
