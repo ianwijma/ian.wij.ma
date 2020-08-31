@@ -5,4 +5,6 @@ url: https://github.com/ianwijma/farmland-plus
 slug: farmland-plus
 ---
 
-# This is a bar post
+After finishing my Stare Till They Grow! Minecraft mod. 
+I wanted to try some more, where after chatting with some people from the Minecraft modding community,
+I found another relatively simple mod concept which modifies some existing blocks.

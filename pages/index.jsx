@@ -23,33 +23,35 @@ export default function Index({ intro, skills, work, education, other, projects,
             </a>
         </div>
     );
-    return <div>
-        <Head>
-            <title>Ian Wijma</title>
-        </Head>
-        <Header right={right} />
-        <Paper header="Hey you!">
-            {intro}
-        </Paper>
-        <Paper header="Skills">
-            {skills}
-        </Paper>
-        <Paper header="Working experience">
-            {work}
-        </Paper>
-        <Paper header="Education">
-            {education}
-        </Paper>
-        <Paper header="Other">
-            {other}
-        </Paper>
-        <Paper header="Projects">
-            <Projects projects={projects}/>
-        </Paper>
-        <Paper header="Blog posts">
-            <BlogPosts blogPosts={blogPosts}/>
-        </Paper>
-    </div>
+    return (
+        <div>
+            <Head>
+                <title>Ian Wijma</title>
+            </Head>
+            <Header right={right} />
+            <Paper header="Hey you!">
+                {intro}
+            </Paper>
+            <Paper header="Skills">
+                {skills}
+            </Paper>
+            <Paper header="Working experience">
+                {work}
+            </Paper>
+            <Paper header="Education">
+                {education}
+            </Paper>
+            <Paper header="Other">
+                {other}
+            </Paper>
+            <Paper header="Projects">
+                <Projects projects={projects}/>
+            </Paper>
+            <Paper header="Blog posts">
+                <BlogPosts blogPosts={blogPosts}/>
+            </Paper>
+        </div>
+    )
 }
 
 export async function getStaticProps () {
