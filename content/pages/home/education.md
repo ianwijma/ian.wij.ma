@@ -15,7 +15,7 @@ After the IT support study I was ready for a challenge,
 and was excited to get started with C#.
 But after a month the pace was slow for myself due to me also playing around with C# at home.
 
-**Game development 2015**
+**Saxion University (Game development) 2015**
 
 After I was done with my programming education. 
 I have applied for a game development university where I have programmed my game from scratch as a challenge for myself.
