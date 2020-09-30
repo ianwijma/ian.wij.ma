@@ -5,7 +5,13 @@ and I love meeting new people of different backgrounds.
 I have many friends from all over the world as I mentioned before.
 Where I love seeing differences between different parts of the world.
 
-`Teamwork` 
+**Teamwork**
+
+Teamwork is very important for me and love practising it.
+Teamwork to me is obvious working in a team, 
+as a group who understands each others standpoint and view.
+I also have lots of experience working and interactive with people from different origins,
+due to the fact that I have friends all over the worlds which I have met up with. 
 
 **Project/Product focused**
 

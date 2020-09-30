@@ -5,5 +5,34 @@ url: https://github.com/ianwijma/ian.wij.ma
 slug: ian-wij-ma
 ---
 
-After having a Github pages for several years I finally found some times to work on my own website.
-Here I plan to write blog posts about my several passions.
+After postponing my personal website for many years,
+I had a long week off with not much to do.
+Thus worked on this very website.
+But I did had some requirements for my website.
+
+## Gotta go FAST!
+
+Sites these times have no excute to be slow.
+There are many free and easy solutions to make fast websites, 
+even with full eCommerce capabilities!
+
+The speed is mainly accomplished by the React based next.js,
+which is pre-rendering the content and serves it effeciently and quick to the end user.
+
+## Mobile first!
+
+Nowadays everyone uses their phones for anything. 
+And if you site doesn't make it easy for mobile users, 
+you might as well not have a website.
+
+## Maintainability
+
+Because I have lots of hobbies, 
+I don't want to spend ALL my time writing a new function for my site.
+So I wanted it to be easy to add and update pages and features. 
+
+## Stack
+
+As stated before I used React and Next.JS, which allows me to pre-render the pages.
+I used markdown for all the content of the site.
+And I host it for free on the reliable hosting of vercel.
