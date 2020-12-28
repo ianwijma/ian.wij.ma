@@ -24,7 +24,7 @@ export default function BlogPosts({ limit = 6, blogPosts, showTags = true }) {
                             <div className="card-body">
                                 <h3 className="card-title">{blogPost.title}</h3>
                                 <p className="card-text">{blogPost.summary}</p>
-                                <Link href={`blog/p/${blogPost.slug}`}>
+                                <Link href={`blog/${blogPost.slug}`}>
                                     <a className="btn btn-dark">Post</a>
                                 </Link>
                                 {showTags ? tags(blogPost) : ''}
