@@ -31,9 +31,18 @@ This allows me to know various gotchas, like shrinking an array in JavaScript ca
 
 **Linux**
 
-I love Linux and I have been using it personally for 6 years and professionally for 5 years.
+I love Linux and I have been using it personally for 7+ years and professionally for 5 years.
 Where since beginning 2019 I personally run fully on Linux, where I migrated my gaming PC to POP!_OS 20.04.
-I also have experience running Linux server. Where Debian is my operating system of choice.
+I also have experience running Linux server. Where Debian/Ubuntu has my preference, but I'm always curious for the next big thing!
+
+**Product development**
+
+I have worked for 5 year on developing products in a SAAS environment, 
+Where I have worked on products ranging from HRM solutions to internal social systems for companies to eCommerce with multi channel support.
+
+With the latter one I have 3+ years experience, I have worked on multi channel support ranging from webshop integration to an in-store POS system.
+My role here was everything from backend to frontend to sysops.
+
 
 **Workaholic**
 
