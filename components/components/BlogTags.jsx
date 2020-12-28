@@ -6,15 +6,19 @@ export default function BlogTags({ blog, tagLimit = 0 }) {
         tags.length = tagLimit;
     }
     return (
-        <div>
+        <div className="badge-container">
+            Tags:&nbsp;
             {tags.map(({name, slug}) => (
-                <span key={slug} className="badge bg-dark fs-6">{name}</span>
+                <span key={slug} className="badge bg-dark">{name}</span>
             ))}
 
             <style jsx>
                 {`
    .badge + .badge {
     margin-left: 5px;
+   }
+   .badge-container {
+     font-size: 18px;
    }
 `}
             </style>
