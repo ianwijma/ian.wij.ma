@@ -1,8 +1,8 @@
 import Link from 'next/link';
-export default function Projects({ max = 5, projects }) {
-    if ( projects.length > max) {
+export default function Projects({ limit = 6, projects }) {
+    if ( limit !== 0 && projects.length > limit) {
         projects.reverse();
-        projects.length = max;
+        projects.length = limit;
         projects.reverse();
     }
     return (

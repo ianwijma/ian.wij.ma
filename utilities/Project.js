@@ -16,7 +16,6 @@ export async function getProjectFileNames() {
 }
 
 const projects = [];
-
 export async function listProjects() {
     if ( projects.length === 0 ) {
         const fileNames = await getProjectFileNames();

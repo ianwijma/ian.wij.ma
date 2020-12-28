@@ -16,7 +16,7 @@ export default function Project({ project }) {
     );
     return (
         <div>
-            <Header suffix="projects"/>
+            <Header suffix="projects" linkHref={'/project'}/>
             <Paper header={project.title} right={right}>
                 {project.content}
             </Paper>
