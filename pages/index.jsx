@@ -30,7 +30,7 @@ export default function Index({ intro, skills, work, education, other, projects,
             &nbsp;
             |
             &nbsp;
-            <a href="#blog-posts" className="link-dark">
+            <a href="/blog" className="link-dark">
                 Blog posts
             </a>
         </div>

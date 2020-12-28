@@ -1,18 +1,10 @@
 import React from "react";
 import Config from "../../content/Config";
 import {getBlogPost, listBlogPosts} from "../../utilities/Blog";
-import Header from "../../components/layouts/Header";
-import Paper from "../../components/containers/Paper";
+import BlogPost from "../../components/BlogPost";
 
 export default function Index({ blog }) {
-    return (
-        <div>
-            <Header suffix="blog"/>
-            <Paper header={blog.title} >
-                {blog.content}
-            </Paper>
-        </div>
-    );
+    return ( <BlogPost blog={blog}/> )
 }
 
 export async function getStaticProps ( context ) {
