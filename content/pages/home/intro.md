@@ -6,7 +6,7 @@ In the future I will also host fun projects to try out here.
 **About me**
 
 I'm Ian Wijma and currently living in Australia, Canberra.
-I'm born on 17th of Juli, 1993 in The Netherlands, Enschede.
+I'm born on 17th of July, 1993 in The Netherlands, Enschede.
 I moved to Australia on 14th of August 2019.
 
 **Passions**
