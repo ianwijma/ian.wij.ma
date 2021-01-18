@@ -3,6 +3,7 @@ title: Technologies I'm learning in 2021
 summary: Technologies I'm learning in...
 date: 18-01-2021
 slug: technologies-im-learning-in-2021
+tags: learning,technologies,2021
 ---
 
 I'm always looking into new and excited technologies to expand my knowledge and keep up to date with technology in general.
