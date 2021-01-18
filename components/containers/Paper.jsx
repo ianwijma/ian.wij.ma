@@ -8,11 +8,11 @@ export default function Paper ({children, header, right}) {
     return (
         <div className="a4 mb-5 shadow p-5" id={id}>
             <div className="a4--header">
-                <h2 className="m-0">
-                    <strong>
+                <h2 className="m-0 row">
+                    <strong className="col-lg-8">
                         {header}
                     </strong>
-                    <span className="a4--header-right float-right">
+                    <span className="a4--header-right col-lg-4">
                         {right}
                     </span>
                 </h2>
