@@ -4,6 +4,7 @@ import unified from "unified";
 import remarkHtml from 'remark-html';
 import remarkParse from "remark-parse";
 import remarkCodeHighlight from 'remark-highlight.js';
+import slugify from "slugify";
 
 export function getBlogDir() {
     return `${process.cwd()}/content/blog`;
@@ -29,8 +30,10 @@ export async function listBlogPosts() {
                 .use(remarkHtml)
                 .process(content.trim()); // pass content to process
 
+            const { tags, ...blog} = data;
             blogPosts.push({
-                ...data,
+                ...blog,
+                tags: prepareTags(tags),
                 content: htmlContent.toString(),
             })
         }
@@ -39,11 +42,21 @@ export async function listBlogPosts() {
     return blogPosts;
 }
 
-export async function getBlogPost( slug ) {
+export async function getBlogPost( blogSlug ) {
     const blogPosts = await listBlogPosts();
-    const filteredBlogPosts = blogPosts.filter(post => post.slug === slug);
+    const filteredBlogPosts = blogPosts.filter(({slug}) => slug === blogSlug);
     if ( filteredBlogPosts.length > 0 ) {
         return filteredBlogPosts[0];
     }
     return null;
+}
+
+function prepareTags(tags = []) {
+    return tags
+        .split(',')
+        .map(tag => tag.trim())
+        .map(tag => {return {
+            name: tag,
+            slug: slugify(tag),
+        }})
 }
