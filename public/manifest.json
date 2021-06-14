@@ -1,9 +1,0 @@
-{
-  "name": "Ian Wijma",
-  "short_name": "App",
-  "theme_color": "#000000",
-  "background_color": "#FFFFFF",
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait"
-}
