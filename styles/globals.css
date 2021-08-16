@@ -3,10 +3,16 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'EuropeanTeletext';
-  src: url('./fonts/EuropeanTeletext.ttf');
+  font-family: 'veramonofont2web2';
+  src: url('./fonts/Android_VeraMono.woff');
 }
 
 #__next {
-  font-family: 'EuropeanTeletext', 'Courier New (monospace)';
+  font-family: 'veramonofont2web2', Vera Mono;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
