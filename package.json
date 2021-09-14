@@ -36,6 +36,7 @@
     "remark-html": "^12.0.0",
     "remark-parse": "^8.0.3",
     "slugify": "^1.4.5",
+    "text-on-gif": "^1.0.29",
     "unified": "^9.2.0"
   }
 }
