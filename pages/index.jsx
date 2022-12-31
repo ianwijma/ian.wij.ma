@@ -1,7 +1,10 @@
 export default function Home() {
   return (
     <>
-      <h1>Memes :ok_hand:</h1>
+      <div className="flex">
+        <div className="w-1/2 h-full">Left</div>
+        <div className="w-1/2 h-full">Right</div>
+      </div>
     </>
-  )
+  );
 }
