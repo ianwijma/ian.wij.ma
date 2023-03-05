@@ -1,6 +1,6 @@
 import { resolve } from 'path'
 import { readFileSync } from "fs";
-import unified from "unified";
+import {unified} from "unified";
 import remarkParse from "remark-parse";
 import remarkCodeHighlight from "remark-highlight.js";
 import remarkHtml from "remark-html";
