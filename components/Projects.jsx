@@ -14,8 +14,8 @@ export default function Projects({ limit = 6, projects }) {
                             <div className="card-body">
                                 <h3 className="card-title">{project.title}</h3>
                                 <p className="card-text">{project.summary}</p>
-                                <Link href={`project/${project.slug}`}>
-                                    <a className="btn btn-dark">Project</a>
+                                <Link href={`project/${project.slug}`} className="btn btn-dark">
+                                    Project
                                 </Link>
                             </div>
                         </div>

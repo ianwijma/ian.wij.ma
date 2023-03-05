@@ -1,6 +1,6 @@
 import {readdirSync, readFileSync} from 'fs';
 import matter from 'gray-matter';
-import unified from "unified";
+import {unified} from "unified";
 import remarkHtml from 'remark-html';
 import remarkParse from "remark-parse";
 import remarkCodeHighlight from 'remark-highlight.js';
