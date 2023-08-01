@@ -12,12 +12,6 @@ import BlogPosts from "../components/BlogPosts";
 export default function Index({ intro, skills, work, education, other, projects, blogPosts }) {
     const right = (
         <div>
-            <a href="/ianwijma-coverletter-generic.pdf" target="_blank" className="link-dark">
-                Cover letter
-            </a>
-            &nbsp;
-            |
-            &nbsp;
             <a href="/ianwijma-resume.pdf" target="_blank" className="link-dark">
                 Resume
             </a>
