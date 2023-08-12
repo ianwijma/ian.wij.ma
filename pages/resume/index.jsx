@@ -23,7 +23,7 @@ export default function Resume() {
                 <div className="col-3">
                     <ResumeHeader>Details</ResumeHeader>
                     <ResumeDetailHeader>Address</ResumeDetailHeader>
-                    <div>Canberra 2614 Australia</div>
+                    <div>Canberra 2913 Australia</div>
                     <ResumeDetailHeader>Email</ResumeDetailHeader>
                     <div>
                         <span className="font-weight-bold">ian</span> at{" "}
@@ -45,7 +45,7 @@ export default function Resume() {
                     <div>English</div>
                     <div>Dutch</div>
                     <div>Australian</div>
-                    <div>Twitch (Dialect)</div>
+                    <div>Twents (Dialect)</div>
                     <ResumeHeader>Links</ResumeHeader>
                     <Link href="https://github.com/ianwijma">
                         <div>Github</div>
