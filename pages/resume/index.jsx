@@ -122,11 +122,11 @@ export default function Resume() {
                         ]}
                         technologies={[
                             "Backend (PHP, Perl, NodeJS, Ruby, Bash)",
-                            "Frontend (JS/TS, React (TS/JS), MicroUI, Custom component library, Redux, Testing Library)",
+                            "Frontend (JS/TS, React (TS/JS), MicroUI, Custom component library, Redux)",
                             "CI/DC (Ruby, Bash, NodeJS, PHP, Terraform, S3)",
                             "Polyglot (PHP, JS/TS, React (TS/JS), Perl, Ruby, Bash)",
                             "Hosting (Terraform, AWS, S3, Cloudflare)",
-                            "TDD & BDD (PHPUnit, Behat, In house perl unit test framework)",
+                            "TDD & BDD (PHPUnit, Behat, Testing Library, In house perl unit test framework)",
                         ]}
                         achievements={[
                             "Enable a team to excels within the company.",
@@ -167,7 +167,7 @@ export default function Resume() {
                         ]}
                     >
                         I worked on Inventory systems, marketplace integrations and working
-                        on microservices are part of my job. where I often find myself also
+                        on microservices were part of my job. where I often find myself also
                         tutoring peers and writing documentation.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
