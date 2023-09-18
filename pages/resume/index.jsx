@@ -35,12 +35,12 @@ export default function Resume() {
                         <Link href="https://ian.wij.ma">Website</Link>
                     </div>
                     <ResumeHeader>Soft Skills</ResumeHeader>
-                    <div>Work From Home</div>
                     <div>Public Speaking</div>
                     <div>Guiding Peers</div>
                     <div>Researching</div>
+                    <div>Documenting</div>
+                    <div>Perspective Discussions</div>
                     <div>Asking Questions</div>
-                    <div>Product Development</div>
                     <ResumeHeader>Languages</ResumeHeader>
                     <div>English</div>
                     <div>Dutch</div>
