@@ -36,11 +36,11 @@ export default function Resume() {
                     </div>
                     <ResumeHeader>Soft Skills</ResumeHeader>
                     <div>Work From Home</div>
-                    <div>Technical Teaching</div>
-                    <div>Product Development</div>
                     <div>Public Speaking</div>
+                    <div>Guiding Peers</div>
                     <div>Researching</div>
                     <div>Asking Questions</div>
+                    <div>Product Development</div>
                     <ResumeHeader>Languages</ResumeHeader>
                     <div>English</div>
                     <div>Dutch</div>
@@ -66,47 +66,48 @@ export default function Resume() {
                 <div className="col-9">
                     <ResumeHeader>About Me</ResumeHeader>
                     <p>
-                        With my years of experience designing, developing and mentoring,
-                        I bring customer-oriented features to your company. All while mentoring
-                        peers and excel them at their current position and beyond. My passion is learning
-                        new technologies all while learning the ins and outs of existing tech.
+                        With my years of experience designing, developing and guiding peers,
+                        I bring customer-oriented features to your company,
+                        while enabling my peers to excel in their position.
+                        My passion is sharing my findings from exploring new and existing technologies.
+                        Which I do multiple times a week.
                     </p>
-                    <p>
-                        I have hands-on experience with the following technologies: {[
-                        'Linux (Debian/Ubuntu/CentOS)',
-                        'MacOS',
-                        'JavaScript/TypeScript',
-                        'NodeJS',
-                        'NestJS',
-                        'React/React Native',
-                        'NextJS',
-                        'Redux',
-                        'VueJS',
-                        'Cordova',
-                        'PHP',
-                        'Symfony',
-                        'PHPUnit',
-                        'Behat',
-                        'Laravel',
-                        'Wordpress',
-                        'Bash',
-                        'Perl',
-                        'Ruby',
-                        'Rust',
-                        'Docker',
-                        'Kubernetes (K8S/K3S)',
-                        'Proxmox VE',
-                        'PostgreSQL',
-                        'MySQL',
-                        'Redis',
-                        'ElasticSearch',
-                        'Terraform',
-                        'AWS',
-                        'Cloudflare',
-                        'Git',
-                        'Mercurial',
-                    ].join(', ')}.
-                    </p>
+                    {/*<p>*/}
+                    {/*    I have hands-on experience with the following technologies: {[*/}
+                    {/*    'Linux (Debian/Ubuntu/CentOS)',*/}
+                    {/*    'MacOS',*/}
+                    {/*    'JavaScript/TypeScript',*/}
+                    {/*    'NodeJS',*/}
+                    {/*    'NestJS',*/}
+                    {/*    'React/React Native',*/}
+                    {/*    'NextJS',*/}
+                    {/*    'Redux',*/}
+                    {/*    'VueJS',*/}
+                    {/*    'Cordova',*/}
+                    {/*    'PHP',*/}
+                    {/*    'Symfony',*/}
+                    {/*    'PHPUnit',*/}
+                    {/*    'Behat',*/}
+                    {/*    'Laravel',*/}
+                    {/*    'Wordpress',*/}
+                    {/*    'Bash',*/}
+                    {/*    'Perl',*/}
+                    {/*    'Ruby',*/}
+                    {/*    'Rust',*/}
+                    {/*    'Docker',*/}
+                    {/*    'Kubernetes (K8S/K3S)',*/}
+                    {/*    'Proxmox VE',*/}
+                    {/*    'PostgreSQL',*/}
+                    {/*    'MySQL',*/}
+                    {/*    'Redis',*/}
+                    {/*    'ElasticSearch',*/}
+                    {/*    'Terraform',*/}
+                    {/*    'AWS',*/}
+                    {/*    'Cloudflare',*/}
+                    {/*    'Git',*/}
+                    {/*    'Mercurial',*/}
+                    {/*].join(', ')}.*/}
+                    {/*</p>*/}
                     <ResumeHeader>Employment History</ResumeHeader>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 125}}
@@ -116,33 +117,32 @@ export default function Resume() {
                         end="Present"
                         responsibilities={[
                             "Design, breakdown and provide guidance around new systems.",
-                            "Provide guidance to enable peers to excel at their job.",
-                            "Break down a legacy system into microservices.",
-                            "Writing, reviewing and documenting new and existing code bases.",
+                            "Provide guidance to enable peers to grow within their job.",
+                            "Breaking down a legacy systems into microservices.",
+                            "Writing, reviewing and documenting new and existing projects and systems.",
                         ]}
                         technologies={[
                             "Backend (PHP, Perl, NodeJS, Ruby, Bash)",
                             "Frontend (JS/TS, React (TS/JS), MicroUI, Custom component library, Redux)",
-                            "CI/DC (Ruby, Bash, NodeJS, PHP, Terraform, S3)",
+                            "DevOps (Terraform, AWS, S3, Cloudflare, Ruby, Bash, NodeJS)",
                             "Polyglot (PHP, JS/TS, React (TS/JS), Perl, Ruby, Bash)",
-                            "Hosting (Terraform, AWS, S3, Cloudflare)",
                             "TDD & BDD (PHPUnit, Behat, Testing Library, In house perl unit test framework)",
                         ]}
                         achievements={[
-                            "Enable a team to excels within the company.",
+                            "Enable teams to excel with the company.",
                             "Design and develop understandable microservices.",
+                            "Presenting and providing technical insight into various technical or non-technical topics.",
                             "Being able to understand business requirement, and help product create new features.",
-                            "Helping 3rd parties and partners to integrate with Australian systems (Stripe & ShipEngine)",
+                            "Helping 3rd parties and partners to integrate with the Australian market (Stripe & ShipEngine)",
                         ]}
                     >
-                        I successfully guided peers to grow in their position and beyond.
-                        I worked with the product team on new features, wrote technical documentation with great
-                        attention to detail,
-                        and broken them down into manageable tasks for any team to pick them up and start working on
-                        the.
+                        As a Tech Lead at Maropost I found myself successfully guiding peers,
+                        working out EPICs to a point where teams understood what and why certain changes needed to happen.
+                        Additionally I've found myself guiding whole teams from across the business ask for my guidance around
+                        topics like feature toggles and the concept behind writing behavioural tests.
+                        Besides all of this I also worked myself on spikes and tasks to help the team I worked with to successfully complete sprints.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
-                        style={{marginBottom: 50}}
                         role="Software Developer"
                         company="Maropost"
                         start="October 2021"
@@ -160,15 +160,17 @@ export default function Resume() {
                             "Hosting (Terraform, AWS, S3, Cloudflare)",
                         ]}
                         achievements={[
-                            "Seeing impacts of mentoring peers",
-                            "Integrating with 3rd party APIs (amazon, Catch, ShipEngine)",
+                            "Seeing impacts of mentoring peers.",
+                            "Integrating with 3rd party APIs (Amazon, Catch, ShipEngine).",
                             "Being able to contribute to teams outside of development.",
                             "Understanding and innovating on business ideas.",
                         ]}
                     >
-                        I worked on Inventory systems, marketplace integrations and working
-                        on microservices were part of my job. where I often find myself also
-                        tutoring peers and writing documentation.
+                        I started off as a Software Developer at Maropost,
+                        but quickly found myself guiding the people who started around the same date is me.
+                        This is because I love helping peers out and do so successfully, as I'm able to quickly learn new systems.
+                        I found myself often documenting legacy systems and work on improvements around Inventory systems,
+                        marketplace integrations and working on microservices.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 25}}
@@ -178,7 +180,7 @@ export default function Resume() {
                         end="September 2021"
                         responsibilities={[
                             <>
-                                Co-design & develop online exhibitions{" "}
+                                Co-design & being the sole developer on the online exhibitions like{" "}
                                 <Link href="https://navy.awm.gov.au">navy.awm.gov.au</Link> &{" "}
                                 <Link href="https://awm.gov.au/3dtreasures">
                                     awm.gov.au/3dtreasures
@@ -196,7 +198,7 @@ export default function Resume() {
                         achievements={[
                             "Working closely with designers to create exciting exhibitions.",
                             "Using machine learning to aid with the transcription of multimedia.",
-                            "Mastering React to a level I can teach people React.",
+                            "Mastering React to a level I can teach others React.",
                         ]}
                     >
                         The Australian War Memorial is Australia's national memorial to the
@@ -217,20 +219,23 @@ export default function Resume() {
                             "Simplify complex UI",
                         ]}
                         technologies={[
-                            "JavaScript/ TypeScript (NodeJS, React, React Native, Backbone)",
-                            "PHP (Laravel / Symfony / In house framework)",
-                            "PostgreSQL / MySQL",
-                            "Git / Mercurial",
-                            "Linux server management",
+                            "Frontend (BackboneJS, Marionette, VueJS, ReactJS, React Native, Cordova, Typescript)",
+                            "Backend (Symfony, PHP, Laravel, PostgreSQL, MySQL, Bash)",
+                            "Tools (Linux, Debian, Mercurial, Bash, Git)",
+                            "Devops (Linux Servers, CI/CD, Teams City)",
                         ]}
                         achievements={[
-                            "Design and deploy a cash register with full hardware integration",
+                            "Design and deploy a cash register with full hardware integration.",
+                            "Being the primary contact person for universities and schools around ongoing intern projects.",
+                            "Communicate with stakeholders and customers.",
                         ]}
                     >
-                        StoreKeeper B.V. is an eCommerce company based in the Netherlands.
-                        They build SAAS commerce solutions ranging from webshops to POS
-                        systems in the store. Because it was a small team, everyone knew and
-                        works on the full stack.
+                        StoreKeeper B.V. builds the similar named API first eCommerce SAAS solution StoreKeeper.
+                        They provide solutions ranging from Webshops for online to POS systems for in the stores.
+                        Because it's team was small I worked on everything,
+                        ranging from the Backend, Admin panel, Apps, Integrations, POS systems, CI/DC and DevOps.
+                        This enabled me to have a broad understanding of everything in a the software development cycle.
+                        From creating the initial wireframe mockups, it's design to the deployment and delivery of new and existing systems.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 200}}
@@ -242,22 +247,24 @@ export default function Resume() {
                             "Communicate with the customer",
                             "Design, develop and deliver custom solutions",
                             "Work in a team of developers, designers, and marketing",
-                            "Estimate features for customer quotes",
+                            // "Estimate features for customer quotes",
                             "Guiding and work with developer interns",
                         ]}
                         technologies={[
-                            "JavaScript (NodeJS, Backbone, Cordova)",
-                            "PHP (Symfony & In house framework)",
-                            "Git / Mercurial",
-                            "Linux desktop (Debian with Gnome)",
+                            "Frontend (BackboneJS, Marionette, Cordova, jQuery, ReactJS)",
+                            "Backend (Symfony, PHP, NodeJS, Bash, Cron)",
+                            "Tools (Linux, Debian, Mercurial, Bash, Git)",
                         ]}
                         achievements={[
-                            "Become a professional programmer from a hobbyist programmer.",
+                            "Orienting and guiding interns into their professional career.",
+                            "Growing from a hobbyist to a professional programmer.",
                         ]}
                     >
-                        Upx Systems B.V. was a company that developed custom solutions for
-                        their customers. Here I worked as a front-end developer. This
-                        company changed to what is now StoreKeeper B.V.
+                        I started off at UPX Systems B.V. as a software developer,
+                        where I worked with the Businesses and Universities on these projects from their first mockups, to it's delivery.
+                        These projects were after transformed into SAAS products after it's delivery, which paid for it's continued development cycle.
+                        These project include CRM & HR systems, Internal social media platforms, health oriented apps,
+                        Product Database for production companies and a eCommerce platform.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
                         role="Trainee Software Developer"
