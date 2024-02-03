@@ -30,19 +30,19 @@ export function ResumeEmploymentHistory({
             Responsibilities:
         </div>
         <ul>
-            {responsibilities.map(responsibility => <li>{responsibility}</li>)}
+            {responsibilities.map((responsibility, index) => <li key={index}>{responsibility}</li>)}
         </ul>
         <div className='font-weight-bold'>
             Technologies:
         </div>
         <ul>
-            {technologies.map(technology => <li>{technology}</li>)}
+            {technologies.map((technology, index) => <li key={index}>{technology}</li>)}
         </ul>
         <div className='font-weight-bold'>
             Achievements:
         </div>
         <ul>
-            {achievements.map(achievement => <li>{achievement}</li>)}
+            {achievements.map((achievement, index) => <li key={index}>{achievement}</li>)}
         </ul>
     </div>
 }
