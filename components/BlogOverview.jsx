@@ -1,14 +1,16 @@
 import React from "react";
 import Header from "./layouts/Header";
-import Paper from "./containers/Paper";
 import BlogPosts from "./BlogPosts";
+import {GlassSection} from "./containers/GlassSection";
+import {GlassHeader} from "./containers/GlassHeader";
 export default function BlogOverview({ blogPosts }) {
     return (
         <div>
             <Header suffix="blog"/>
-            <Paper header={'Posts'} >
+            <GlassSection>
+                <GlassHeader>Posts</GlassHeader>
                 <BlogPosts blogPosts={blogPosts} limit={0} />
-            </Paper>
+            </GlassSection>
         </div>
     );
 }

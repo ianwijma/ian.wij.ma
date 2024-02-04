@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function BlogTags({ blog, tagLimit = 0 }) {
-    const { tags = [] } = blog;
+export default function BlogTags({ tags, tagLimit = 0 }) {
     if ( tagLimit !== 0 && tags.length > tagLimit) {
         tags.length = tagLimit;
     }

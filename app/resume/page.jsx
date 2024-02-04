@@ -6,7 +6,7 @@ import {ResumeDetailHeader} from "../../components/texts/ResumeDetailHeader";
 
 export default function Resume() {
     return (
-        <div className='resume' style={{maxWidth: "750px", margin: "0 auto", fontSize: "small"}}>
+        <div className='resume bg-white' style={{maxWidth: "750px", margin: "0 auto", fontSize: "small"}}>
             <div className="d-flex justify-content-center align-items-center p-4">
                 <div className="border border-dark px-5 py-3">
                     <h1 className="m-0">Ian Wijma</h1>
