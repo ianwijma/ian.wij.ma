@@ -9,7 +9,7 @@ export default async function Project({ params }) {
     const { slug } = params;
     const { url, title, content } = await getProject(slug)
     const right = (
-        <div>
+        <div className='float-right'>
             <a href={url} className="link-dark" target="_blank">
                 <FontAwesomeIcon icon={faGithub} size='1x' />
             </a>
