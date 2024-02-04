@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Config from "../content/Config"
 import Paper from "../components/containers/Paper";
 import getPageContent from "../utilities/getPageContent";
@@ -9,7 +8,25 @@ import {listProjects} from "../utilities/Project";
 import {listBlogPosts} from "../utilities/Blog";
 import BlogPosts from "../components/BlogPosts";
 
-export default function Index({ intro, skills, work, education, other, projects, blogPosts }) {
+/** @type {import('next').Metadata} */
+export const metadata = {
+    title: 'Ian Wijma',
+    description: 'My online space'
+}
+
+export default async function Page() {
+    const { intro, skills, work, education, other, projects, blogPosts } = {
+        config: Config,
+        intro: await getPageContent('home/intro'),
+        skills: await getPageContent('home/skills'),
+        work: await getPageContent('home/work'),
+        other: await getPageContent('home/other'),
+        education: await getPageContent('home/education'),
+        projects: await listProjects(),
+        blogPosts: await listBlogPosts(),
+    };
+
+
     const right = (
         <div>
             <a href="/ianwijma-resume.pdf" target="_blank" className="link-dark">
@@ -31,10 +48,6 @@ export default function Index({ intro, skills, work, education, other, projects,
     );
     return (
         <div>
-            <Head>
-                <title>Ian Wijma</title>
-                <meta name="description" content="My online space" />
-            </Head>
             <Header right={right} />
             <Paper header="Hey you!">
                 {intro}
@@ -59,19 +72,4 @@ export default function Index({ intro, skills, work, education, other, projects,
             </Paper>
         </div>
     )
-}
-
-export async function getStaticProps () {
-    return {
-        props: {
-            config: Config,
-            intro: await getPageContent('home/intro'),
-            skills: await getPageContent('home/skills'),
-            work: await getPageContent('home/work'),
-            other: await getPageContent('home/other'),
-            education: await getPageContent('home/education'),
-            projects: await listProjects(),
-            blogPosts: await listBlogPosts(),
-        }
-    }
 }

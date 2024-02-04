@@ -18,20 +18,6 @@ export default function Paper ({children, header, right}) {
                 </h2>
             </div>
             { typeof children === 'string' ? <div className="a4--content" dangerouslySetInnerHTML={{__html:children}} /> : children}
-
-            <style jsx>
-{`
-   .a4 {
-    margin: 0 auto;
-    max-width: 950px;
-   }
-   .a4--header { 
-    border-bottom: 1px dotted lightgray;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-   }
-`}
-            </style>
         </div>
     )
 }

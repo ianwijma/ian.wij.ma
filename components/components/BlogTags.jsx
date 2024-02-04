@@ -11,17 +11,6 @@ export default function BlogTags({ blog, tagLimit = 0 }) {
             {tags.map(({name, slug}) => (
                 <span key={slug} className="badge bg-dark">{name}</span>
             ))}
-
-            <style jsx>
-                {`
-   .badge + .badge {
-    margin-left: 5px;
-   }
-   .badge-container {
-     font-size: 18px;
-   }
-`}
-            </style>
         </div>
     )
 }
