@@ -1,12 +1,14 @@
 import React from "react";
 import Config from "../content/Config"
-import Paper from "../components/containers/Paper";
 import getPageContent from "../utilities/getPageContent";
 import Header from "../components/layouts/Header";
 import Projects from "../components/Projects";
 import {listProjects} from "../utilities/Project";
 import {listBlogPosts} from "../utilities/Blog";
 import BlogPosts from "../components/BlogPosts";
+import {GlassSection} from "../components/containers/GlassSection";
+import {GlassHeader} from "../components/containers/GlassHeader";
+import {GlassContent} from "../components/containers/GlassContent";
 
 /** @type {import('next').Metadata} */
 export const metadata = {
@@ -29,19 +31,19 @@ export default async function Page() {
 
     const right = (
         <div>
-            <a href="/ianwijma-resume.pdf" target="_blank" className="link-dark">
+            <a href="/ianwijma-resume.pdf" target="_blank" className="link-light">
                 Resume
             </a>
             &nbsp;
             |
             &nbsp;
-            <a href="/project" className="link-dark">
+            <a href="/project" className="link-light">
                 Projects
             </a>
             &nbsp;
             |
             &nbsp;
-            <a href="/blog" className="link-dark">
+            <a href="/blog" className="link-light">
                 Blog posts
             </a>
         </div>
@@ -49,27 +51,37 @@ export default async function Page() {
     return (
         <div>
             <Header right={right} />
-            <Paper header="Hey you!">
-                {intro}
-            </Paper>
-            <Paper header="Skills">
-                {skills}
-            </Paper>
-            <Paper header="Working experience">
-                {work}
-            </Paper>
-            <Paper header="Education">
-                {education}
-            </Paper>
-            <Paper header="Other">
-                {other}
-            </Paper>
-            <Paper header="Projects">
-                <Projects projects={projects}/>
-            </Paper>
-            <Paper header="Blog posts">
-                <BlogPosts blogPosts={blogPosts}/>
-            </Paper>
+            <div className='flex flex-column gap-5'>
+
+                <GlassSection>
+                    <GlassHeader>Hey you!</GlassHeader>
+                    <GlassContent>{intro}</GlassContent>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Skills</GlassHeader>
+                    <GlassContent>{skills}</GlassContent>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Working experience</GlassHeader>
+                    <GlassContent>{work}</GlassContent>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Education</GlassHeader>
+                    <GlassContent>{education}</GlassContent>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Other</GlassHeader>
+                    <GlassContent>{other}</GlassContent>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Projects</GlassHeader>
+                    <Projects projects={projects}/>
+                </GlassSection>
+                <GlassSection>
+                    <GlassHeader>Blog posts</GlassHeader>
+                    <BlogPosts blogPosts={blogPosts}/>
+                </GlassSection>
+            </div>
         </div>
     )
 }

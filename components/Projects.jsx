@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import {Glass} from "./containers/Glass";
 export default function Projects({ limit = 6, projects }) {
     if ( limit !== 0 && projects.length > limit) {
         projects.reverse();
@@ -6,21 +7,17 @@ export default function Projects({ limit = 6, projects }) {
         projects.reverse();
     }
     return (
-        <div className="row">
+        <div className="grid md:grid-cols-2 gap-3">
             {projects.map(project => {
-                return (
-                    <div className="col-md-6 mb-4" key={project.slug}>
-                        <div className="card">
-                            <div className="card-body">
-                                <h3 className="card-title">{project.title}</h3>
-                                <p className="card-text">{project.summary}</p>
-                                <Link href={`project/${project.slug}`} className="btn btn-dark">
-                                    Project
-                                </Link>
-                            </div>
-                        </div>
+                return <Glass className="p-3 flex flex-column justify-content-between" key={project.slug}>
+                    <h3 className='text-md text-white'>{project.title}</h3>
+                    <p className='text-gray-100'>{project.summary}</p>
+                    <div className='text-gray-100'>
+                        <Link href={`project/${project.slug}`} className="btn btn-dark">
+                            Post
+                        </Link>
                     </div>
-                )
+                </Glass>
             })}
         </div>
     )
