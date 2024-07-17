@@ -65,49 +65,44 @@ export default function Resume() {
                         My passion is sharing my findings from exploring new and existing technologies.
                         Which I do multiple times a week.
                     </p>
-                    {/*<p>*/}
-                    {/*    I have hands-on experience with the following technologies: {[*/}
-                    {/*    'Linux (Debian/Ubuntu/CentOS)',*/}
-                    {/*    'MacOS',*/}
-                    {/*    'JavaScript/TypeScript',*/}
-                    {/*    'NodeJS',*/}
-                    {/*    'NestJS',*/}
-                    {/*    'React/React Native',*/}
-                    {/*    'NextJS',*/}
-                    {/*    'Redux',*/}
-                    {/*    'VueJS',*/}
-                    {/*    'Cordova',*/}
-                    {/*    'PHP',*/}
-                    {/*    'Symfony',*/}
-                    {/*    'PHPUnit',*/}
-                    {/*    'Behat',*/}
-                    {/*    'Laravel',*/}
-                    {/*    'Wordpress',*/}
-                    {/*    'Bash',*/}
-                    {/*    'Perl',*/}
-                    {/*    'Ruby',*/}
-                    {/*    'Rust',*/}
-                    {/*    'Docker',*/}
-                    {/*    'Kubernetes (K8S/K3S)',*/}
-                    {/*    'Proxmox VE',*/}
-                    {/*    'PostgreSQL',*/}
-                    {/*    'MySQL',*/}
-                    {/*    'Redis',*/}
-                    {/*    'ElasticSearch',*/}
-                    {/*    'Terraform',*/}
-                    {/*    'AWS',*/}
-                    {/*    'Cloudflare',*/}
-                    {/*    'Git',*/}
-                    {/*    'Mercurial',*/}
-                    {/*].join(', ')}.*/}
-                    {/*</p>*/}
                     <ResumeHeader>Employment History</ResumeHeader>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 125}}
+                        role="Software Engineer"
+                        company="Atlassian"
+                        start="February 2024"
+                        end="Present"
+                        responsibilities={[
+                            "Investigate, discuss and implement various performance improvements in the Jira Issue View",
+                            "Write, review and discuss code around performance and relaibility.",
+                            "Representing a team that owns the Jira Issue view, which gets over a billion impressions per month.",
+                            "Working on task, project and product oriented tasks, impacting millions of users.",
+                        ]}
+                        technologies={[
+                            "Backend (Node, React (RLL), Java)",
+                            "Frontend (JS/TS, React (TS/JS), Relay)",
+                            "DevOps (Integration Tests, Bitbucket Pipelines, Bamboo CI)",
+                            "TDD & BDD (Jest, Integration Test for react server components)",
+                        ]}
+                        achievements={[
+                            "During my onboarding, a lot of my peers though I was with the company for many years.",
+                            "Overly possitive feedback during my first and sequensial assessments.",
+                            "Actively picking up harder tasks to ensure projects run smoothly and in a good pace.",
+                            "Getting glaring possitive peer feedback.",
+                        ]}
+                    >
+                        As a Software Engineer I found myself excelling at my job. I was put early on a high stakes project that 
+                        involved improving the performance for XL enterprice customers at Atlassian. 
+                        My day-to-day task is working in large code bases and technologies that are developed in house, which I managed to do 
+                        and spread information about.
+                        I love working on challanging tasks, which enabled me to receive reconision from my managers and peers of various levels.
+                    </ResumeEmploymentHistory>
+                    <ResumeEmploymentHistory
+                        style={{marginBottom: 500}}
                         role="Technical Lead"
                         company="Maropost"
                         start="March 2023"
-                        end="Present"
+                        end="February 2024"
                         responsibilities={[
                             "Design, breakdown and provide guidance around new systems.",
                             "Provide guidance to enable peers to grow within their job.",
