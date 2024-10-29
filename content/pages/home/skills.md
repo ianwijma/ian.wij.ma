@@ -25,19 +25,18 @@ I consider myself very capable in programming.
 I'm not focused on one language which makes it relatively easy for me to pickup a new language.
 I learn myself programming concepts instead the language.
 
-Saying this I find myself skilled in JavaScript because I have been programming with this languages 8 years as a hobby, 
-and 5 years professionally.
+Saying this I find myself skilled in JavaScript because I have been programming with this languages over a decade and a half as a hobby, and since 2015 professionally.
 This allows me to know various gotchas, like shrinking an array in JavaScript can be done via setting the `array.length = 5;`
 
 **Linux**
 
-I love Linux and I have been using it personally for 7+ years and professionally for 5 years.
+I love Linux and I have been using it personally for since 2008 and professionally for since 2015.
 Where since beginning 2019 I personally run fully on Linux, where I migrated my gaming PC to POP!_OS 20.04.
 I also have experience running Linux server. Where Debian/Ubuntu has my preference, but I'm always curious for the next big thing!
 
 **Product development**
 
-I have worked for 5 year on developing products in a SAAS environment, 
+I have worked for since 2015 on developing products in SAAS environments, 
 Where I have worked on products ranging from HRM solutions to internal social systems for companies to eCommerce with multi channel support.
 
 With the latter one I have 3+ years experience, I have worked on multi channel support ranging from webshop integration to an in-store POS system.

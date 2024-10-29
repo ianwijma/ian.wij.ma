@@ -1,16 +1,38 @@
+**Atlassian 2024 - present**
+
+As a Software Engineer I found myself excelling at my job. I was put
+early on a high stakes project that involved improving the performance
+for XL enterprice customers at Atlassian. My day-to-day task is workiPng
+in large code bases and technologies that are developed in house, which
+I managed to do and spread information about. I love working on
+challanging tasks, which enabled me to receive reconision from my
+managers and peers of various levels.
+
+**Maropost 2021 - 2024**
+
+As a Tech Lead at Maropost I found myself successfully guiding peers,
+working out EPICs to a point where teams understood what and why
+certain changes needed to happen. Additionally I've found myself
+guiding whole teams from across the business ask for my guidance around
+topics like feature toggles and the concept behind writing behavioural
+tests. Besides all of this I also worked myself on spikes and tasks to
+help the team I worked with to successfully complete sprints.
+
+**Australian War Memorial 2021 for 6 months**
+
+Co-design & being the sole developer on the online exhibitions
+like [navy.awm.gov.au](https://navy.awm.gov.au) & [awm.gov.au/3dtreasures](https://www.awm.gov.au/3dtreasures/)
+Design & develop transcription tools for images, video and audio.
+Create a foundation to easily create online exhibitions for the
+public.
+
 **StoreKeeper B.V. 2015-2020**
 
-After my game development application was a flop I started working for StoreKeeper B.V.
-Here I learned allot, but mainly that I need to learn at my own pace. 
-Which school are often slow and won't give me a challenge. 
-
-Here I learned professional/technical communication in English due to the fact that the CTO is from Poland.
-Where we mainly work with JavaScript, PHP and PostGreSQL on an eCommerce product.
-I learned here to combine hardware and software because we have our own POS system. 
-with a connection to several web shops using a backend and backoffice to manage it all.
-
-**Albert Heijn (Dutch grocery store) 2010-2013**
-
-I started off with a proper job at the local grocery store,
-where I learned allot about teamwork, communication and being organised.
-Where after a few months I mainly worked in the warehouse extracting the truck and organising the warehouse.
+As a Senior Software developer at StoreKeeper B.V. I build their API first eCommerce SAAS
+solution. They provide solutions ranging from Webshops for
+online to POS systems for in the stores. Because it's team was small I
+worked on everything, ranging from the Backend, Admin panel, Apps,
+Integrations, POS systems, CI/DC and DevOps. This enabled me to have a
+broad understanding of everything in a the software development cycle.
+From creating the initial wireframe mockups, it's design to the
+deployment and delivery of new and existing systems.

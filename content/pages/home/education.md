@@ -14,11 +14,3 @@ where I was tinkering around with several 2nd hard desktops and a 1u server.
 After the IT support study I was ready for a challenge,
 and was excited to get started with C#.
 But after a month the pace was slow for myself due to me also playing around with C# at home.
-
-**Saxion University (Game development) 2015**
-
-After I was done with my programming education. 
-I have applied for a game development university where I have programmed my game from scratch as a challenge for myself.
-But after getting negative advice because my game from scratch was less complete than other peoples drag and drop games.
-I decided to work for a year. 
-Which turned into my never going back to any university due to the fact I learn way more in the field and personally.
