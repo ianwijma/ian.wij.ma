@@ -7,7 +7,7 @@ import {GlassContent} from "../../../components/containers/GlassContent";
 import BlogTags from "../../../components/components/BlogTags";
 
 export default async function Index({ params }) {
-    const { slug } = params
+    const { slug } = await params
     const { title, content, tags } = await getBlogPost(slug)
     const right = (
         <BlogTags tags={tags}/>
