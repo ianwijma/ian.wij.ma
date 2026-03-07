@@ -4,7 +4,6 @@ import {unified} from "unified";
 import remarkHtml from 'remark-html';
 import remarkParse from "remark-parse";
 import remarkCodeHighlight from 'remark-highlight.js';
-import { clone } from 'lodash';
 
 export function getProjectDir() {
     return `${process.cwd()}/content/project`;
@@ -15,29 +14,27 @@ export async function getProjectFileNames() {
     return readdirSync(path, 'utf-8');
 }
 
-const projects = [];
 export async function listProjects() {
-    if ( projects.length === 0 ) {
-        const fileNames = await getProjectFileNames();
-        for (const fileName of fileNames) {
-            const path = `${getProjectDir()}/${fileName}`
-            const rawContent = readFileSync(path, 'utf-8');
-            const {content, data} = matter(rawContent);
+    const projects = [];
+    const fileNames = await getProjectFileNames();
+    for (const fileName of fileNames) {
+        const path = `${getProjectDir()}/${fileName}`
+        const rawContent = readFileSync(path, 'utf-8');
+        const {content, data} = matter(rawContent);
 
-            const htmlContent = await unified()
-                .use(remarkParse)
-                .use(remarkCodeHighlight) // highlight code block
-                .use(remarkHtml)
-                .process(content.trim()); // pass content to process
+        const htmlContent = await unified()
+            .use(remarkParse)
+            .use(remarkCodeHighlight)
+            .use(remarkHtml)
+            .process(content.trim());
 
-            projects.push({
-                ...data,
-                content: htmlContent.toString(),
-            })
-        }
+        projects.push({
+            ...data,
+            content: htmlContent.toString(),
+        })
     }
 
-    return clone( projects );
+    return projects;
 }
 
 export async function getProject(slug ) {

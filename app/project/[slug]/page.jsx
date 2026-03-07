@@ -8,7 +8,7 @@ import {GlassHeader} from "../../../components/containers/GlassHeader";
 import {GlassContent} from "../../../components/containers/GlassContent";
 
 export default async function Project({ params }) {
-    const { slug } = params;
+    const { slug } = await params;
     const { url, title, content } = await getProject(slug)
     const right = (
         <div className='float-right'>

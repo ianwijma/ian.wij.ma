@@ -15,28 +15,26 @@ export async function getBlogFileNames() {
     return readdirSync(path, 'utf-8');
 }
 
-const blogPosts = [];
 export async function listBlogPosts() {
-    if ( blogPosts.length === 0 ) {
-        const fileNames = await getBlogFileNames();
-        for (const fileName of fileNames) {
-            const path = `${getBlogDir()}/${fileName}`
-            const rawContent = readFileSync(path, 'utf-8');
-            const {content, data} = matter(rawContent);
+    const blogPosts = [];
+    const fileNames = await getBlogFileNames();
+    for (const fileName of fileNames) {
+        const path = `${getBlogDir()}/${fileName}`
+        const rawContent = readFileSync(path, 'utf-8');
+        const {content, data} = matter(rawContent);
 
-            const htmlContent = await unified()
-                .use(remarkParse)
-                .use(remarkCodeHighlight) // highlight code block
-                .use(remarkHtml)
-                .process(content.trim()); // pass content to process
+        const htmlContent = await unified()
+            .use(remarkParse)
+            .use(remarkCodeHighlight)
+            .use(remarkHtml)
+            .process(content.trim());
 
-            const { tags, ...blog} = data;
-            blogPosts.push({
-                ...blog,
-                tags: prepareTags(tags),
-                content: htmlContent.toString(),
-            })
-        }
+        const { tags, ...blog} = data;
+        blogPosts.push({
+            ...blog,
+            tags: prepareTags(tags),
+            content: htmlContent.toString(),
+        })
     }
 
     return blogPosts;
@@ -51,7 +49,8 @@ export async function getBlogPost( blogSlug ) {
     return null;
 }
 
-function prepareTags(tags = []) {
+function prepareTags(tags = '') {
+    if (!tags) return [];
     return tags
         .split(',')
         .map(tag => tag.trim())
