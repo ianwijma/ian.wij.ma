@@ -59,11 +59,11 @@ export default function Resume() {
                 <div className="col-9">
                     <ResumeHeader>About Me</ResumeHeader>
                     <p>
-                        With my years of experience designing, developing and guiding peers,
-                        I bring customer-oriented features to your company,
-                        while enabling my peers to excel in their position.
-                        My passion is sharing my findings from exploring new and existing technologies.
-                        Which I do multiple times a week.
+                        With over a decade of Software Development experience,
+                        and 3 years of using AI to development software.
+                        I bridge the gap between AI enabled Software Development and customer-focussed feature development.
+                        Expanding my own knowledge is something constantly, 
+                        and love sharing new technics I have learned, enabling my peers to grow as well.
                     </p>
                     <ResumeHeader>Employment History</ResumeHeader>
                     <ResumeEmploymentHistory
@@ -73,29 +73,29 @@ export default function Resume() {
                         start="February 2024"
                         end="Present"
                         responsibilities={[
-                            "Investigate, discuss and implement various performance improvements in the Jira Issue View",
+                            "Implement, maintain and continue to develop Jira SSR using Tesseract, directly improving TTVC@P90 by 1500ms seconds.",
+                            "Worked on enabling components to render in on the server (SSR), resulting in additional TTVC@P90 improvement of 1800ms across Jira.",
                             "Write, review and discuss code around performance and relaibility.",
                             "Representing a team that owns the Jira Issue view, which gets over a billion impressions per month.",
                             "Working on task, project and product oriented tasks, impacting millions of users.",
                         ]}
                         technologies={[
                             "Backend (Node, React (RLL), Java)",
-                            "Frontend (JS/TS, React (TS/JS), Relay)",
-                            "DevOps (Integration Tests, Bitbucket Pipelines, Bamboo CI)",
+                            "Frontend (JS/TS, React (TS/JS), Relay, Chrome Extentions)",
                             "TDD & BDD (Jest, Integration Test for react server components)",
                         ]}
                         achievements={[
-                            "During my onboarding, a lot of my peers though I was with the company for many years.",
+                            "Improve Dev toolsing, saving 5000 dev hours in the span of a year.",
+                            "Ask questions and taking ownership made my peers expect me to be of a high position.",
                             "Overly possitive feedback during my first and sequensial assessments.",
-                            "Actively picking up harder tasks to ensure projects run smoothly and in a good pace.",
-                            "Getting glaring possitive peer feedback.",
+                            "I dive deep into harder tasks, ensuring projects are completed within time limits.",
                         ]}
                     >
                         As a Software Engineer I found myself excelling at my job. I was put early on a high stakes project that 
                         involved improving the performance for XL enterprice customers at Atlassian. 
                         My day-to-day task is working in large code bases and technologies that are developed in house, which I managed to do 
                         and spread information about.
-                        I love working on challanging tasks, which enabled me to receive reconision from my managers and peers of various levels.
+                        I love working on challanging tasks, which has enabled me to receive reconision from managers and peers of various levels.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 500}}
@@ -131,6 +131,7 @@ export default function Resume() {
                         Besides all of this I also worked myself on spikes and tasks to help the team I worked with to successfully complete sprints.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
+                        style={{marginBottom: 500}}
                         role="Software Developer"
                         company="Maropost"
                         start="October 2021"
@@ -161,7 +162,7 @@ export default function Resume() {
                         marketplace integrations and working on microservices.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
-                        style={{marginBottom: 25}}
+                        style={{marginBottom: 550}}
                         role="Frontend Developer"
                         company="Australian War Memorial"
                         start="March 2021"
@@ -218,12 +219,10 @@ export default function Resume() {
                             "Communicate with stakeholders and customers.",
                         ]}
                     >
-                        StoreKeeper B.V. builds the similar named API first eCommerce SAAS solution StoreKeeper.
-                        They provide solutions ranging from Webshops for online to POS systems for in the stores.
-                        Because it's team was small I worked on everything,
-                        ranging from the Backend, Admin panel, Apps, Integrations, POS systems, CI/DC and DevOps.
+                        StoreKeeper B.V. builds their API first eCommerce SAAS solution StoreKeeper.
+                        This API first approach enabled solutions ranging from webships to POS systems.
+                        It was a small team, enabling me to work on their backend, admin panel, app, POS systems, CI/CD and DevLops.
                         This enabled me to have a broad understanding of everything in a the software development cycle.
-                        From creating the initial wireframe mockups, it's design to the deployment and delivery of new and existing systems.
                     </ResumeEmploymentHistory>
                     <ResumeEmploymentHistory
                         style={{marginBottom: 200}}
@@ -254,7 +253,7 @@ export default function Resume() {
                         These project include CRM & HR systems, Internal social media platforms, health oriented apps,
                         Product Database for production companies and a eCommerce platform.
                     </ResumeEmploymentHistory>
-                    <ResumeEmploymentHistory
+                    {/* <ResumeEmploymentHistory
                         role="Trainee Software Developer"
                         company="Nubium"
                         start="January 2015"
@@ -279,7 +278,7 @@ export default function Resume() {
                         They had their own custom CMS, building multiple products on top of it.
                         Around the end of my internship here I also got to play around with some
                         Java applet that was communicating with a Chrome extension.
-                    </ResumeEmploymentHistory>
+                    </ResumeEmploymentHistory> */}
                     <ResumeHeader>Education</ResumeHeader>
                     <ResumeEducationHistory
                         education="Diploma of Software Development"
